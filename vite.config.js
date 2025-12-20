@@ -163,7 +163,7 @@ export default defineConfig(({ command }) => {
       },
     },
     server: {
-      allowedHosts: ['evette-unelderly-erica.ngrok-free.dev'],
+      allowedHosts: ['https://9775b5cf2365.ngrok-free.app'],
       headers: {
         'Content-Security-Policy': "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; style-src * 'unsafe-inline' 'unsafe-eval' blob: data:; img-src * data: blob:; font-src * data: blob:; connect-src * ws: wss:; frame-ancestors *;",
         'X-Frame-Options': 'ALLOWALL',
