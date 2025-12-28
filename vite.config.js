@@ -165,7 +165,14 @@ export default defineConfig(({ command }) => {
     server: {
       allowedHosts: ['evette-unelderly-erica.ngrok-free.dev'],
       headers: {
-        'Content-Security-Policy': "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; style-src * 'unsafe-inline' 'unsafe-eval' blob: data:; img-src * data: blob:; font-src * data: blob:; connect-src * ws: wss:; frame-ancestors https://qulearning.github.io https://evette-unelderly-erica.ngrok-free.dev;",
+        'Content-Security-Policy':
+          "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; " +
+          "script-src * 'unsafe-inline' 'unsafe-eval' blob: data:; " +
+          "style-src * 'unsafe-inline' 'unsafe-eval' blob: data:; " +
+          "img-src * data: blob:; " +
+          "font-src * data: blob:; " +
+          "connect-src * ws: wss:; " +
+          "frame-ancestors https://qulearning.github.io https://evette-unelderly-erica.ngrok-free.dev http://localhost:3000 http://127.0.0.1:3000;",
       },
       proxy: {
         '/assets/img': {
