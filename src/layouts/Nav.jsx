@@ -36,10 +36,6 @@ const Nav = memo(() => {
     navigate('/');
   }, [navigate]);
 
-
-    navigate('/');
-  }, [navigate]);
-
   const items = useMemo(
     () =>
       navItems.map((item) => ({
