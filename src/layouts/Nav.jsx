@@ -33,15 +33,9 @@ const Nav = memo(() => {
   const handleLogoClick = useCallback(() => navigate('/'), [navigate]);
 
   const handleHomeClick = useCallback(() => {
-    try {
-      if (typeof document !== 'undefined' && document.referrer) {
-        // send user back to the original referring page
-        window.location.href = document.referrer;
-        return;
-      }
-    } catch (e) {
-      // ignore and fallback to app route
-    }
+    navigate('/');
+  }, [navigate]);
+
 
     navigate('/');
   }, [navigate]);
